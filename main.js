@@ -1,3 +1,4 @@
+//@ts-check
 import { app, BrowserWindow } from 'electron'
 import path from 'node:path'
 
@@ -27,3 +28,5 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
+
+console.log('hello');
