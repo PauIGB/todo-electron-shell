@@ -1,0 +1,20 @@
+{
+  "name": "electron_todo_shell",
+  "version": "0.0.0",
+  "description": "Desktop shell for TODO application",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "todo",
+    "shell"
+  ],
+  "author": "0",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.1"
+  }
+}
