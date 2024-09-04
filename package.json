@@ -1,6 +1,6 @@
 {
   "name": "todo-electron-shell",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Desktop shell for TODO application",
   "main": "main.js",
   "type": "module",
@@ -16,13 +16,21 @@
   "author": "0",
   "license": "MIT",
   "devDependencies": {
+    "@eslint/js": "^9.9.1",
     "electron": "^32.0.1",
     "electronmon": "^2.0.3",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3"
   },
   "lint-staged": {
-    "*.{js,css,md,html,json}": "prettier --write"
+    "*.{js}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{md,html,json}": "prettier --write"
   }
 }
