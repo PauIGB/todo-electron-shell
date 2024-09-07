@@ -2,14 +2,12 @@
 import { app, BrowserWindow } from 'electron'
 import path from 'node:path'
 
-const __dirname = path.resolve()
-
 const createWindow = () => {
   const win = new BrowserWindow({
     height: 800,
     width: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(app.getAppPath(), 'preload.js'),
     },
   })
 

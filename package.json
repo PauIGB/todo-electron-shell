@@ -1,6 +1,6 @@
 {
   "name": "todo-electron-shell",
-  "version": "1.0.0-beta1",
+  "version": "0.3.1-beta",
   "description": "Desktop shell for TODO application",
   "main": "main.js",
   "type": "module",
